@@ -24,6 +24,9 @@ nav {
     background-color: beige;
     border-bottom: 2px solid white;
 }
+.nav-selected {
+    background-color: white;
+}
 nav ul {
     padding: 0;
     margin: 0;
