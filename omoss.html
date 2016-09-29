@@ -2,7 +2,7 @@
 <html lang="sv">
 <head>
   <meta charset="utf-8">
-  <title>Katt Ltd.</title>
+  <title>Cute Cat Ltd.</title>
   <meta name="description" content="">
   <meta name="author" content="Projekt-HTML-Grupp1">
 
@@ -21,9 +21,10 @@
            text-align: center;
            
             width: 600px;
-            margin-top:70px;
+            margin-top:50px;
             margin-bottom:30px; 
             overflow-x: hidden;
+           
        }
        
        img {
@@ -31,33 +32,34 @@
            height: 200px;
            margin:5px;
            border-radius: 50%;
+           box-shadow: 10px 10px 5px grey;
        }
            
       
        img:hover{
             opacity: 0.5;
+           
        } 
        
-       a:hover { color:deeppink ;}
+       a:hover { color:deeppink ; }
        
-       .flex-container1{
+       
+      .flex-container1{
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-       }
-       .flex-container2 {
-
-            display: flex;
-            flex-direction: row;
-            width:750px;
             background-color: lightgrey;
-            margin-bottom: 20px;
-            }
+          
+       }
+    
 
        .flex-item {
             background-color: white;
             width: 250px;
             height: 300px;
             margin:20px;
+           text-shadow: 6px 6px 4px grey;
+          
             }
          </style>    
 </head>
@@ -85,8 +87,7 @@
         </p>
     </div>      
     <div class="flex-container1">
-        <div class="flex-container2">
-            <div class="flex-item">  Sebastian <img src="images/bear.jpg"/> <i>contact info: <a href="m"> seb@hotmail.co.uk</a> </i> </div>        
+            <div class="flex-item">  Sebastian  <img src="images/bear.jpg"/> <i>contact info: <a href="m"> seb@hotmail.co.uk</a> </i> </div>        
                                 <div class="flex-item"> Mona <img src="images/owl.jpg"/> <i>contact info:<a href="m"> mon@hotmail.co.uk </a></i></div>
                             <div class="flex-item"> Jens<img src="images/ping.jpg"/><i>contact info: <a href="m"> jen@hotmail.co.uk </a></i></div>
     </div>

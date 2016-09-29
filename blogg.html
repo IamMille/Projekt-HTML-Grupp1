@@ -8,8 +8,76 @@
   <meta name="author" content="Projekt-HTML-Grupp1">
 
   <link rel="stylesheet" href="global.css">
+  <style>
+        .nav-selected {
+            background-color: white;
+        } 
+        body {
+            background-color: beige;}
+      
+      .flex-parent {
+           display: flex;
+           justify-content: center;              
+           background:#c9eeff;
+           flex-wrap: wrap;
+           padding-bottom: 70px;
+      }
+      .flex-child1 {
+        padding:15px;
+        margin: 40px;
+        width:25%;
+        background:#f5d75c;
+        color:black;
+      }
+  .flex-child2 {
+        padding:15px;
+        margin: 40px;
+        width:25%;
+        background:#f5d75c;
+        color:black;
+       
+      }
+  a:hover { color:deeppink ; }
+      
+ </style>    
 </head>
 <body>
 
+    <header>Cute Cat Ltd.</header>
+    
+       <nav>
+        <ul>
+            <li ><a href="." title="Start">Start</a></li>
+            <li><a href="shop.html" title="Shop">Shop</a></li>
+            <li class="nav-selected"><a href="omoss.html" title="Om oss">Om oss</a></li>
+            <li><a href="blogg.html" title="Blogg">Blogg</a></li>
+            <li><a href="forum.html" title="Forum">Forum</a></li>
+        </ul>
+      </nav>
+    <h2><strong> Love That Cat Blog </strong></h2>
+       <p> Vi ger dig din dagliga dos av söta, roliga, varma och otydlig.
+
+            Vi har sammanställt ett sortiment av de sötaste, roligaste, fuzziest sällskapsdjur stunder vi kan hitta. Eftersom ingen gör oss att le mycket som våra husdjur.
+      </p>
+      <div class="flex-parent">
+          <strong><i>Cute och Funny</i></strong>
+          <div class="flex-child1"> <h3><i>cute och funny </i></h3>
+              <p> <a href="."/> En kitten Kiss om dagen håller doktorn borta</p>
+              
+          </div>     
+          <div class="flex-child2"> <h3><i> Kan Husdjur har allergier?</i></h3>
+             
+          </div>
+          
+          <div class="flex-child2"> <h3><i> Skulle du mata ditt husdjur en Grain diet?
+              </i></h3>
+          </div>      
+          <div class="flex-child2"> <h3><i> 8 Tips for Taking the Perfect Photo of Your Pet.
+         </i></h3>
+          </div> 
+          <div class="flex-child2"> <h3><i>
+              </i></h3>
+          </div> 
+    </div>  
 </body>
 </html>
