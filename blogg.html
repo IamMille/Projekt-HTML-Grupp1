@@ -7,7 +7,7 @@
     <title>Cute Ltd.</title>
     <meta name="description" content="">
     <meta name="author" content="Projekt-HTML-Grupp1">
-
+    <script src="/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="global.css">
     <style>
         .nav-selected {
@@ -16,88 +16,94 @@
         
         body {
             background-color: beige;
+            background: url("images/blogcover.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         
         .container1 {
             display: flex;
             justify-content: center;
-            background-color: aquamarine;
+            background-color: transparent;
             flex-direction: row;
-            padding: 10px;
+            padding: 5px;
         }
         
         .container2 {
-            background-color: darkturquoise;
+            display: flex;
+            background-color: transparent;
             padding: 10px;
+            align-items: center;
+        }
+        
+        .container2-item {
+            margin: 5px;
+            flex: 1 1 auto;
+            text-align: left;
+            border: 1px dashed white;
+            line-height: 80px;
+            font-size: 30px
+        }
+        
+        .container2 img {
+            border: 1px solid;
+            width: 400px;
+            border-bottom-width: thick;
         }
         
         .container3 {
             display: flex;
             flex-direction: column;
             padding: 10px;
-            background-color: coral;
+            background-color: transparent;
         }
         
         .container4 {
-            background-color: orange;
+            background-color: transparent;
             padding: 10px;
-            flex-wrap: wrap;
             margin-bottom: 20px;
             text-align: center;
-        }
-        
-        .container5 {
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-            background-color: greenyellow;
+            color: white;
+            border-style: groove;
+            width: 600px;
+            font-style: oblique;
+            font-size: 20px;
         }
         
         .container6 {
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            background-color: lemonchiffon;
-            padding: 5px;
-            margin: auto;
+            flex-direction: column;
         }
         
         .container6a {
             border: 1px dashed black;
-            margin: 5px;
             flex: 1 1 auto;
+            text-align: center;
+            background-color: rgba(240, 252, 200, 0.59);
+            margin: 10px;
         }
         
-        .container6b {
-            border: 1px dashed black;
-            flex: 1 1 auto;
+        .container6a img {
+            border-bottom-width: thick;
         }
         
-        .container7 {
-            display: flex;
-            flex-direction: row;
-            background-color: white;
-            padding: 5px;
-            margin: auto;
-        }
-        
-        .container7a {
-            border: 1px dashed black;
-            margin: 5px;
-            flex: 1 1 auto;
-        }
-        
-        .container7b {
-            border: 1px dashed black;
-            flex: 1 1 auto;
-        }
-        
-        img {
-            width: 200px;
+        .container6a p {
+            text-align: left;
+            font-size: 20px;
+            padding: 10px;
         }
         
         a:hover {
             color: deeppink;
+        }
+        
+        @media (min-width: 50px) and (max-width: 500px) {
+            div.container4 {
+                visibility: hidden;
+            }
+            div.container1 {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -106,6 +112,8 @@
 
     <header>Cute Cat Ltd.</header>
 
+    <br>
+    <br>
     <nav>
         <ul>
             <li><a href="/" title="Start">Start</a></li>
@@ -115,53 +123,62 @@
             <li><a href="forum.html" title="Forum">Forum</a></li>
         </ul>
     </nav>
-    <div class="container1"> 1
+    <div class="container1">
 
         <div class="container2">
-            <ul>
-                <li><a href=".">En kitten Kiss om dagen håller doktorn borta..</a></li>
-                <li><a href=".">Kan Husdjur har allergier?</a></li>
-                <li><a href=".">Skulle du mata ditt husdjur en Grain diet?</a></li>
-                <li><a href=".">8 Tips for Taking the Perfect Photo of Your Pet.</a></li>
-            </ul>
-            <img src="images/blogg.jpg" />
-
+            <div class="container2-item">
+                <ul>
+                    <li><a href=".">En kitten Kiss om dagen håller doktorn borta.</a></li>
+                    <li><a href=".">Kan Husdjur har allergier?</a></li>
+                    <li><a href=".">Skulle du mata ditt husdjur en Grain diet?</a></li>
+                    <li><a href=".">8 Tips for Taking the Perfect Photo of Your Pet.</a></li>
+                </ul>
+                <img src="images/blogg.jpg" alt="" />
+            </div>
         </div>
 
-        <div class="container3"> 3
-            <div class="container4"> 4
+        <div class="container3">
+            <div class="container4">
                 <h2><strong> Love That Cat Blog </strong></h2>
                 <p> Vi ger dig din dagliga dos av söta, roliga, varma och otydlig. Vi har sammanställt ett sortiment av de sötaste, roligaste, fuzziest sällskapsdjur stunder vi kan hitta. Eftersom ingen gör oss att le mycket som våra husdjur.
                 </p>
             </div>
-            <div class="container5"> 5
-                <div class="container6">6
+            <div class="container5">
+                <div class="container6">
                     <div class="container6a">
-                        <h3><i>cute och funny </i></h3>
-                        <p> <a href="."> En kitten Kiss om dagen håller doktorn borta..</a></p>
+
+                        <h3> <a href="."> En kitten Kiss om dagen håller doktorn borta..</a> </h3>
+                        <img class="container6a img" src="images/blog4.jpg" alt="" />
+                        <p> I denna veckas upplaga av random-forskning-folk-göra-om-vår-Kattar, uppenbarligen en stor, gammal, DREGLANDE smooch är din biljett till god hälsa.
+
+                        </p>
                     </div>
                     <div class="container6b">
-                        <h3><i> Kan Husdjur har allergier?</i></h3>
-                    </div>
-                </div>
+                        <div class="container6a">
+                            <h3><a href=".">Kan Husdjur har allergier?</a></h3>
+                            <img class="container6a img" src="images/blog3.jpg" alt="" />
+                            <p>Har ditt husdjur börjar klia vid den här tiden på året? Slicka och tugga fötterna non-stop? Eller utveckla hudinfektioner, botten klåda eller öronproblem ?
+                            </p>
+                        </div>
 
-                <div class="container7">7
-                    <div class="container7a">
-                        <h3><i> Skulle du mata ditt husdjur en Grain diet?
-                           </i></h3>
+                        <div class="container6a">
+                            <h3><a href=".">Skulle du mata ditt husdjur en Grain diet?</a></h3>
+                            <img class="container6a img" src="images/blog2.jpg" alt="" />
+                            <p>Korn fri, är hypoallergena sällskapsdjur dieter blir allt populärare. Dr Eloise Bright diskuterar om katter och hundar är allergiska mot spannmål, vad som orsakar födoämnesallergier, och om du ska köpa ditt husdjur en säd gratis mat.
+                            </p>
+                        </div>
+                        <div class="container6a">
+                            <h3><a href=".">8 Tips for Taking the Perfect Photo of Your Pet.</a></h3>
+                            <img class="container6a img" src="images/blogg1.jpg" alt="" />
+                            <p>Bilder från katter dominerar värd sajter som Flickr och sociala plattformar som Instagram. Men att få den perfekta bilden av din hund kan vara svårt.</p>
+                        </div>
                     </div>
-                    <div class="container7b">
-                        <h3><i> 8 Tips for Taking the Perfect Photo of Your Pet.
-                         </i></h3>
-                    </div>
-                </div>
 
+                </div>
             </div>
         </div>
 
-
     </div>
-
 </body>
 
 </html>
