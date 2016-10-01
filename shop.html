@@ -13,7 +13,6 @@
             display: inline-block;
             border: 2px solid white;
             border-radius: 2em;
-            background-color: bisque;
             padding: 10px;
             width: 300px;
             height: 400px;
@@ -26,7 +25,6 @@
             font-size: 1.2em;
             color: black;
             font-family: Georgia, serif;
-            text-align: center;
         }
         img {
             display: block;
@@ -40,6 +38,20 @@
             border-radius: 2em;
             background-color: darkseagreen;
             padding; 5px;
+        }
+        body {
+            background: url("images/cover.jpg")
+            top-right: no-repeat;
+            background-attachment: fixed;
+        }
+        cover {
+            width: 100%;
+            height: 0;
+            background-image: url("images/cover.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-top: 56.25%;
+            z-index: -1;
         }
         main > div {
             float: left;
@@ -57,6 +69,14 @@
                 <li><a href="omoss.html" title="Om oss">Om oss</a></li>
                 <li><a href="blogg.html" title="Blogg">Blogg</a></li>
                 <li><a href="forum.html" title="Forum">Forum</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li class="nav-selected"><a href="#" title="Raser">Raser</a></li>
+                <li><a href="#" title="Kattmat">Kattmat</a></li>
+                <li><a href="#" title="Tillbehör">Tillbehör</a></li>
+                <li><a href="#" title="Leksaker">Leksaker</a></li>
             </ul>
         </nav>
     <main>
