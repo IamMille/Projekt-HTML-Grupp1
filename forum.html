@@ -1,15 +1,209 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Katt Ltd.</title>
-  <meta name="description" content="">
-  <meta name="author" content="Projekt-HTML-Grupp1">
+    <title>Cute Cat Ltd.</title>
+    <meta name="description" content="">
+    <meta name="author" content="Projekt-HTML-Grupp1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="global.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="global.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+        }
+        
+        aside {
+            min-width: 0px;
+        }
+        
+        #btnbar {
+            text-align: center;
+            padding: 20px 0px 10px;
+        }
+        
+        main section {
+            width: 700px;
+        }
+        
+        .table {
+            display: table;
+        }
+        
+        .table .tr:first-child {
+            font-weight: bolder;
+        }
+        
+        .tr {
+            display: table-row;
+        }
+        
+        .td {
+            display: table-cell;
+            padding: 5px;
+            border: 1px dashed grey;
+        }
+        
+        #trending {
+            border: 1px solid #cecece;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        
+        #trending div {
+            display: inline-block;
+            border-left: 1px solid #cecece;
+            padding: 5px;
+        }
+        
+        #trending div:nth-child(2) {
+            text-align: center;
+            overflow: hidden;
+            color: red;
+        }
+        
+        #trending div:first-child {
+            font-weight: bolder;
+            display: inline-block;
+            width: 100px;
+            padding: 5px;
+        }
+        
+        #trending span:not(:last-child):after {
+            content: " | ";
+        }
+        
+        #forum .flexrow:nth-child(1) {
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+        
+        .flexrow {
+            display: flex;
+            border: 1px dashed grey;
+            padding: 5px;
+        }
+        
+        .flexrow div {
+            flex: 1;
+        }
+        
+        .flexrow .cat {
+            flex: 1.5;
+        }
+        
+        .flexrow .post {
+            flex: 3;
+        }
+    </style>
 </head>
+
 <body>
 
+    <header>Cute Cat Ltd.</header>
+
+    <nav>
+        <ul>
+            <li><a href="/" title="Start">Start</a></li>
+            <li><a href="shop.html" title="Shop">Shop</a></li>
+            <li><a href="omoss.html" title="Om oss">Om oss</a></li>
+            <li><a href="blogg.html" title="Blogg">Blogg</a></li>
+            <li class="nav-selected"><a href="forum.html" title="Forum">Forum</a></li>
+        </ul>
+    </nav>
+
+    <div id="btnbar">
+        <button>Aktuella ämnen</button>
+        <button>Nya ämnen</button>
+        <button>Nya inlägg</button>
+    </div>
+
+    <main>
+        <section>
+            <h2>Forum</h2>
+
+            <div id="trending">
+                <div>TRENDING</div>
+                <div>
+                    <span>Tomater är frukter (2d sedan)</span>
+                    <span>Katter är söta (365d sedan)</span>
+                </div>
+            </div>
+
+            <div id="forum">
+                <div class="flexrow" data-toggle="tooltip" data-placement="right" title="text-transform: uppercase;">
+                    <div class="cat">Cat</div>
+                    <div class="post">Post</div>
+                    <div class="numth">NumTh</div>
+                    <div class="numposts">NumPosts</div>
+                </div>
+
+                <div class="flexrow">
+                    <div class="cat">Söta katter</div>
+                    <div class="post">Vilken är den sötaste katten som finns?</div>
+                    <div class="numth">21k</div>
+                    <div class="numposts">259k</div>
+                </div>
+
+                <div class="flexrow">
+                    <div class="cat">Lata katter</div>
+                    <div class="post">Jag är jättelat, vilken katt passar mig??</div>
+                    <div class="numth">21k</div>
+                    <div class="numposts">259k</div>
+                </div>
+
+                <div class="flexrow">
+                    <div class="cat">Andra katter</div>
+                    <div class="post">Söta katter, lata katter, men finns det andra katter?</div>
+                    <div class="numth">21k</div>
+                    <div class="numposts">259k</div>
+                </div>
+            </div>
+
+            <h2>Forum #1</h2>
+            <div class="table">
+                <div class="tr">
+                    <div class="td">KATEGORI</div>
+                    <div class="td">SENASTE INLÄGGET</div>
+                    <div class="td">TRÅDAR</div>
+                    <div class="td">INLÄGG</div>
+                </div>
+                <div class="tr">
+                    <div class="td">Söta katter</div>
+                    <div class="td">Vilken är den sötaste katten som finns?</div>
+                    <div class="td">21k</div>
+                    <div class="td">259k</div>
+                </div>
+                <div class="tr">
+                    <div class="td">Utekatter</div>
+                    <div class="td">...</div>
+                    <div class="td">21k</div>
+                    <div class="td">259k</div>
+                </div>
+            </div>
+        </section>
+        <aside>
+            aside
+        </aside>
+    </main>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
 </body>
+
 </html>
