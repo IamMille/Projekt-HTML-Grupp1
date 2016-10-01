@@ -19,9 +19,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <style>
+        h2 {
+            color: white;
+            font-family: cursive;
+            font-size: 2em;
+        }
         main {
             display: flex;
             justify-content: center;
+            background: url(images/cover.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         
         aside {
@@ -36,52 +44,59 @@
         main section {
             width: 700px;
         }
-        
-        .table {
-            display: table;
-        }
-        
-        .table .tr:first-child {
-            font-weight: bolder;
-        }
-        
-        .tr {
-            display: table-row;
-        }
-        
-        .td {
-            display: table-cell;
-            padding: 5px;
-            border: 1px dashed grey;
-        }
-        
+
         #trending {
-            border: 1px solid #cecece;
+            border: 1px solid #fff;
             margin-bottom: 10px;
             display: flex;
+            background: rgba(247, 247, 247, 0.59);
         }
         
         #trending div {
             display: inline-block;
-            border-left: 1px solid #cecece;
             padding: 5px;
         }
-        
-        #trending div:nth-child(2) {
-            text-align: center;
-            overflow: hidden;
-            color: red;
-        }
-        
+
         #trending div:first-child {
             font-weight: bolder;
             display: inline-block;
-            width: 100px;
+            text-align: center;
+            width: 120px;
             padding: 5px;
+            border-left: 5px solid white;
+            border-right: 5px solid white;
+        }
+
+        #trending div:nth-child(2) {
+            text-align: center;
+            overflow: hidden;
+            color: black;
         }
         
         #trending span:not(:last-child):after {
             content: " | ";
+            color: white;
+        }
+
+        #forum {
+           /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
+            background: rgba(240, 252, 200, 0.59);
+        }
+
+        #forum > div {
+            border: 1px dashed grey;
+        }
+
+        /* ej första raden (kolumn rubriker), inte 3-4e columnen */
+        #forum > .flexrow:not(:first-child) > div:not(:nth-child(n+3)) {
+           cursor: pointer;
+        }
+        #forum > div > div:not(:last-child) {
+            border-right: 1px dashed grey;
+        }
+
+        #forum .flexrow div {
+            padding-left: 10px;
         }
         
         #forum .flexrow:nth-child(1) {
@@ -98,13 +113,13 @@
         .flexrow div {
             flex: 1;
         }
-        
-        .flexrow .cat {
-            flex: 1.5;
-        }
-        
+
         .flexrow .post {
             flex: 3;
+        }
+
+        .flexrow .cat {
+            flex: 1.5;
         }
     </style>
 </head>
@@ -123,18 +138,19 @@
         </ul>
     </nav>
 
-    <div id="btnbar">
-        <button>Aktuella ämnen</button>
-        <button>Nya ämnen</button>
-        <button>Nya inlägg</button>
-    </div>
-
     <main>
         <section>
             <h2>Forum</h2>
 
-            <div id="trending">
-                <div>TRENDING</div>
+            <div id="btnbar">
+                <button>Aktuella ämnen</button>
+                <button>Nya ämnen</button>
+                <button>Nya inlägg</button>
+                <button>Dina favoriter</button>
+            </div>
+
+            <div id="trending" data-toggle="tooltip" data-placement="right" title="Seperator using :not(:last-child):after">
+                <div>SENASTE</div>
                 <div>
                     <span>Tomater är frukter (2d sedan)</span>
                     <span>Katter är söta (365d sedan)</span>
@@ -143,10 +159,10 @@
 
             <div id="forum">
                 <div class="flexrow" data-toggle="tooltip" data-placement="right" title="text-transform: uppercase;">
-                    <div class="cat">Cat</div>
-                    <div class="post">Post</div>
-                    <div class="numth">NumTh</div>
-                    <div class="numposts">NumPosts</div>
+                    <div class="cat">KATEGORI</div>
+                    <div class="post">INLÄGG</div>
+                    <div class="numth">TRÅDAR</div>
+                    <div class="numposts">POSTER</div>
                 </div>
 
                 <div class="flexrow">
@@ -171,31 +187,8 @@
                 </div>
             </div>
 
-            <h2>Forum #1</h2>
-            <div class="table">
-                <div class="tr">
-                    <div class="td">KATEGORI</div>
-                    <div class="td">SENASTE INLÄGGET</div>
-                    <div class="td">TRÅDAR</div>
-                    <div class="td">INLÄGG</div>
-                </div>
-                <div class="tr">
-                    <div class="td">Söta katter</div>
-                    <div class="td">Vilken är den sötaste katten som finns?</div>
-                    <div class="td">21k</div>
-                    <div class="td">259k</div>
-                </div>
-                <div class="tr">
-                    <div class="td">Utekatter</div>
-                    <div class="td">...</div>
-                    <div class="td">21k</div>
-                    <div class="td">259k</div>
-                </div>
-            </div>
         </section>
-        <aside>
-            aside
-        </aside>
+
     </main>
 
     <script>
