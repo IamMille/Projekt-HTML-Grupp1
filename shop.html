@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <title>Cute Cat Ltd.</title>
+  <title>Katt Ltd.</title>
     <meta name="description" content="">
     <meta name="author" content="Projekt-HTML-Grupp1">
 
@@ -11,12 +11,19 @@
     <link rel="stylesheet" href="global.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <style>
+        body {
+            background-color: beige;
+            background: url("images/blogcover.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         div > div {
             display: inline-block;
             border: 2px solid white;
             border-radius: 2em;
+            background-color: bisque;
             padding: 10px;
-            width: 300px;
+            width: 330px;
             height: 400px;
             margin: 1em;
             overflow: hidden;
@@ -27,6 +34,7 @@
             font-size: 1.2em;
             color: black;
             font-family: Georgia, serif;
+            text-align: center;
         }
         img {
             display: block;
@@ -40,15 +48,6 @@
             border-radius: 2em;
             background-color: darkseagreen;
             padding; 5px;
-        }
-        cover {
-            width: 100%;
-            height: 0;
-            background-image: url("images/cover.jpg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            padding-top: 56.25%;
-            z-index: -1;
         }
         main > div {
             float: left;
@@ -68,22 +67,14 @@
                 <li><a href="forum.html" title="Forum">Forum</a></li>
             </ul>
         </nav>
-        <nav>
-            <ul>
-                <li class="nav-selected"><a href="#" title="Raser">Raser</a></li>
-                <li><a href="#" title="Kattmat">Kattmat</a></li>
-                <li><a href="#" title="Tillbehör">Tillbehör</a></li>
-                <li><a href="#" title="Leksaker">Leksaker</a></li>
-            </ul>
-        </nav>
     <main>
         <div>
-            <div><img src="images/norwegian_forestcat.jpg"/><p>Norsk Skogskatt, Hane, 7000kr</p><button class="button">Purrrchase</button> </div>
-            <div><img src="images/norwegian_forestcat2.jpg"/><p>Norsk Skogskatt, Hona, 12000kr</p><button class="button">Purrrchase</button></div>
-            <div><img src="images/bengal_kitten.jpg"/><p>Bengal, Hona, 21000kr</p><button class="button">Purrrchase</button></div>
-            <div><img src="images/m_coon_kitten.jpg"/><p>Maine Coon, Hane, 16000kr</p><button class="button">Purrrchase</button></div>
-            <div><img src="images/persian_kitten.jpg"/><p>Persian, Hane, 14000kr</p><button class="button">Purrrchase</button></div>
-            <div><img src="#"/><p>Crazy Cat Lady, Paket, 25000kr</p><button class="button">Mer Info</button></div>
+            <div><img src="images/norwegian_forestcat.jpg"/><p>Norsk Skogskatt, Hane, 7000kr</p><button class="button">Köp</button> </div>
+            <div><img src="images/norwegian_forestcat2.jpg"/><p>Norsk Skogskatt, Hona, 12000kr</p><button class="button">Köp</button></div>
+            <div><img src="images/bengal_kitten.jpg"/><p>Bengal, Hona, 21000kr</p><button class="button">Köp</button></div>
+            <div><img src="images/m_coon_kitten.jpg"/><p>Maine Coon, Hane, 16000kr</p><button class="button">Köp</button></div>
+            <div><img src="images/persian_kitten.jpg"/><p>Persian, Hane, 14000kr</p><button class="button">Köp</button></div>
+            <div><img src="images/kittens2.jpg"/><p>Crazy Cat Lady Paket</p><button class="button"><a href="produkt.html"/>Mer Info</button></div>
             <div></div>
             <div></div>
             <div></div>

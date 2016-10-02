@@ -4,7 +4,7 @@ body {
     background-color: #eee;
     color: #333;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
+    font-size: 20px;
 }
 
 header {
@@ -45,6 +45,18 @@ nav li a {
 }
 nav li:hover {
     background-color: white;
+}
+button {
+    font-family: Arial;
+    font-size: 2em;
+    border: 2px solid white;
+    border-radius: 2em;
+    background-color: darkseagreen;
+    padding; 5px;
+}
+nav li a:hover {
+    text-decoration: none;
+    color: #006500
 }
 footer {
     text-align: center;
