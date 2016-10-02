@@ -17,7 +17,16 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        div > div {
+        .shoparticle {
+            display: inline-block;
+            background-color: rgba(240, 252, 200, 0.59);
+            overflow: hidden;
+            flex: 1 1 auto;
+            margin: 20px;
+            text-align: center;
+            /*text-shadow: 6px 6px 2px gray;*/
+        }
+        /*div > div {
             display: inline-block;
             border: 2px solid white;
             border-radius: 2em;
@@ -28,6 +37,11 @@
             margin: 1em;
             overflow: hidden;
             text-align: center;
+        }*/
+        a:link {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
         }
         p {
             text-align: center;
@@ -39,18 +53,24 @@
         img {
             display: block;
             margin: auto;
-            border-radius: 15px;
+            /*border-radius: 15px;*/
         }
         button {
+            background-color: rgba(63, 191, 61, 0.59);
             font-family: Arial;
             font-size: 2em;
-            border: 2px solid white;
-            border-radius: 2em;
-            background-color: darkseagreen;
+            border: 0px solid white;
+            /*border-radius: 2em;*/
             padding; 5px;
+            width: 300px;
         }
         main > div {
             float: left;
+        }
+        .varukorg {
+            position: absolute; 
+            left: 90%;
+            background-color: limegreen;
         }
     </style>
 </head>
@@ -68,13 +88,25 @@
             </ul>
         </nav>
     <main>
+        <nav>
+            <ul>
+                <ul>
+                    <li class="nav-selected"><a href="#" title="Raser">Raser</a></li>
+                    <li><a href="#" title="Kattmat">Kattmat</a></li>
+                    <li><a href="#" title="Tillbehör">tillbehör</a></li>
+                    <li><a href="#" title="Pälsvård">Pälsvård</a></li>
+                    <li><a href="#" title="Övrigt">Övrigt</a></li>
+                </ul>
+                <li class="varukorg"><a href="#" title="Varukorg">Varukorg (2)</a></li>
+            </ul>    
+        </nav>
         <div>
-            <div><img src="images/norwegian_forestcat.jpg"/><p>Norsk Skogskatt, Hane, 7000kr</p><button class="button">Köp</button> </div>
-            <div><img src="images/norwegian_forestcat2.jpg"/><p>Norsk Skogskatt, Hona, 12000kr</p><button class="button">Köp</button></div>
-            <div><img src="images/bengal_kitten.jpg"/><p>Bengal, Hona, 21000kr</p><button class="button">Köp</button></div>
-            <div><img src="images/m_coon_kitten.jpg"/><p>Maine Coon, Hane, 16000kr</p><button class="button">Köp</button></div>
-            <div><img src="images/persian_kitten.jpg"/><p>Persian, Hane, 14000kr</p><button class="button">Köp</button></div>
-            <div><img src="images/kittens2.jpg"/><p>Crazy Cat Lady Paket</p><button class="button"><a href="produkt.html"/>Mer Info</button></div>
+            <div class="shoparticle"><img src="images/norwegian_forestcat.jpg"/><p>Norsk Skogskatt, Hane</p><p>7000kr</p><button class="button">Köp</button> </div>
+            <div class="shoparticle"><img src="images/norwegian_forestcat2.jpg"/><p>Norsk Skogskatt, Hona</p><p>12000kr</p><button class="button">Köp</button></div>
+            <div class="shoparticle"><img src="images/bengal_kitten.jpg"/><p>Bengal, Hona</p><p>21000kr</p><button class="button">Köp</button></div>
+            <div class="shoparticle"><img src="images/m_coon_kitten.jpg"/><p>Maine Coon, Hane</p><p>16000kr</p><button class="button">Köp</button></div>
+            <div class="shoparticle"><img src="images/persian_kitten.jpg"/><p>Persian, Hane</p><p>17000kr</p><button class="button">Köp</button></div>
+            <div class="shoparticle"><img src="images/kittens2.jpg"/><p>Crazy Cat Lady Paket</p><button class="button"><a href="produkt.html"/>Mer Info</button></div>
             <div></div>
             <div></div>
             <div></div>
