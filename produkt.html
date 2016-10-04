@@ -11,15 +11,37 @@
     <link rel="stylesheet" href="global.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <style>
+    body {
+            background: url("images/cover.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
     img {
         float: right;
         margin: 0px 20px 20px 20px
     }
     p {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
-    main div {
-        height: 500px;
+    .item {
+        display: inline-block;
+        background-color: rgba(240, 252, 200, 0.59);
+        overflow: hidden;
+        flex: 1 1 auto;
+        margin: 40px;
+        text-align: left;
+        padding: 20px;
+    }
+    button {
+            background-color: rgba(63, 191, 61, 0.59);
+            font-family: Arial;
+            font-size: 2em;
+            border: 0px solid white;
+            padding; 5px;
+            width: 300px;
+    }
+    form {
+        width: 40%;
     }
 </style>
 </head>
@@ -37,11 +59,19 @@
             </ul>
         </nav>
     <main>
-        <div>
-            <h3>Crazy Cat Lady Paket</h3>
+        <div class="item">
+            <h3><strong>Crazy Cat Lady Paket</strong></h3>
             <img src="images/kittens.jpg"/>
-            <p>Våran första paketlösning erbjuder våra kundar </p>    
-            <p>Med våran unika paket lösning så erbjuder vi ett urval av kattungar som vi skickar direkt till din dörr. </p>
+            <p>Crazy Cat Lady är vår första paketlösning som erbjuder våra mest hängivna kunder.</p>
+            <br>
+            <p>Med vår unika paket lösning så erbjuder vi ett urval av kattungar som vi skickar direkt till din dörr. Vad vi gör är att vi tar de tre första lösgående kattungarna vi kan hitta, paketerar ner dem och skickar dem till dig. På det sättet får du en överraskning i vilka katter du får</p>
+            <br>
+            <p>Du får också torrfoder, kattlåda, transport bur och en lagom stinkande kofta med i paketet.</p>
+            <br>
+            <form>
+                <h4>Meddelande till personal ang produkten</h4>
+                <textarea rows="5" cols="50"></textarea>
+            </form>
             <button class="button">Köp</button>
         </div>
     </main>
