@@ -2,27 +2,40 @@
 <html lang="sv">
 <head>
   <meta charset="utf-8">
-
-  <title>Cute Cat Ltd.</title>
+    <title>Cute Cat Ltd.</title>
     <meta name="description" content="">
     <meta name="author" content="Projekt-HTML-Grupp1">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="global.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<style>
+    <style>
         body {
             background: url("images/cover.jpg");
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover;   
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        main > nav {
+            flex: 1 1 auto;
+        }
+        .produkter {
+            margin: 40px;
+            
+            
         }
         .shoparticle {
+            
             display: inline-block;
             background-color: rgba(240, 252, 200, 0.59);
             overflow: hidden;
             flex: 1 1 auto;
             margin: 20px;
             text-align: center;
+            
         }
         a:link {
             color: black;
@@ -39,14 +52,12 @@
         img {
             display: block;
             margin: auto;
-            /*border-radius: 15px;*/
         }
         button {
             background-color: rgba(63, 191, 61, 0.59);
             font-family: Arial;
             font-size: 2em;
             border: 0px solid white;
-            /*border-radius: 2em;*/
             padding; 5px;
             width: 300px;
         }
@@ -55,7 +66,7 @@
         }
         .varukorg {
             position: absolute; 
-            left: 90%;
+            left: 80%;
             background-color: limegreen;
         }
     </style>
@@ -75,7 +86,7 @@
         </nav>
     <main>
         <nav>
-            <ul>
+            <div>
                 <ul>
                     <li class="nav-selected"><a href="#" title="Raser">Raser</a></li>
                     <li><a href="#" title="Kattmat">Kattmat</a></li>
@@ -83,16 +94,16 @@
                     <li><a href="#" title="Pälsvård">Pälsvård</a></li>
                     <li><a href="#" title="Övrigt">Övrigt</a></li>
                 </ul>
-                <li class="varukorg"><a href="#" title="Varukorg">Varukorg (2)</a></li>
-            </ul>    
+                <!--<li class="varukorg"><a href="#" title="Varukorg">Varukorg (2)</a></li>-->
+            </div>    
         </nav>
-        <div>
+        <div class="produkter">
             <div class="shoparticle"><img src="images/norwegian_forestcat.jpg"/><p>Norsk Skogskatt, Hane</p><p>7000kr</p><button class="button">Köp</button> </div>
             <div class="shoparticle"><img src="images/norwegian_forestcat2.jpg"/><p>Norsk Skogskatt, Hona</p><p>12000kr</p><button class="button">Köp</button></div>
             <div class="shoparticle"><img src="images/bengal_kitten.jpg"/><p>Bengal, Hona</p><p>21000kr</p><button class="button">Köp</button></div>
             <div class="shoparticle"><img src="images/m_coon_kitten.jpg"/><p>Maine Coon, Hane</p><p>16000kr</p><button class="button">Köp</button></div>
             <div class="shoparticle"><img src="images/persian_kitten.jpg"/><p>Persian, Hane</p><p>17000kr</p><button class="button">Köp</button></div>
-            <div class="shoparticle"><img src="images/kittens2.jpg"/><p>Crazy Cat Lady Paket</p><button class="button"><a href="produkt.html"/>Mer Info</button></div>
+            <div class="shoparticle"><img src="images/kittens2.jpg"/><p>Crazy Cat Lady Paket</p><p>5000kr</p><a href="produkt.html"><button class="button">Mer Info</button></a></div>
             <div></div>
             <div></div>
             <div></div>
