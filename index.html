@@ -8,6 +8,10 @@
     <meta name="description" content="">
     <meta name="author" content="Projekt-HTML-Grupp1">
 
+    <link rel="icon" sizes="32x32" href="images/favicon/black-cat-32.png">
+    <link rel="icon" sizes="64x64" href="images/favicon/black-cat-64.png">
+    <link rel="icon" sizes="114x114" href="images/favicon/black-cat-114.png">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="global.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -31,18 +35,26 @@
             /* img ratio */
             padding-top: 34.375%;
         }
-        
-        #covertext {
-            border: 1px solid red;
-            padding-top: 34.375%;
-            font-weight: 800;
-            font-size: 1.5em;
-            color: white;
-        }
 
         #pres {
             padding: 15px;
-            padding-bottom: 0px;
+            padding-bottom: 10px;
+        }
+
+        #pres h2 {
+            font-family: cursive;
+            font-size: 2em;
+            margin-bottom: 2px;
+        }
+
+        #pres p::first-letter {
+            font-size: 2em;
+            font-family: cursive;
+        }
+
+        #pres p {
+            margin: 0;
+            line-height: 0.9;
         }
         
         #flexboxes {
@@ -67,9 +79,12 @@
         }
 
         .boxes h2 {
-            border-bottom: 2px solid #aaaaaa;
+            border-bottom: 2px solid #aaa;
             padding: 5px;
             margin-bottom: 15px;
+            font-family: cursive;
+            font-size: 1.7em;
+            padding-bottom: 20px;
         }
         
         .boxes p:not(:last-of-type) {
@@ -141,8 +156,8 @@
         <section>
             <div id="pres">
                 <h2>Välkommen till Cute Cat!</h2>
-                <p>Vi är den största tillverkaren av katter i världen.
-                    <br/> Vi tillverkar stora, vi tillverkar små, vi tillverkar några med päls på.</p>
+                <p>Vi är den största tillverkaren av katter i världen.</p>
+                <p>Vi tillverkar stora, vi tillverkar små, vi tillverkar några med päls på.</p>
             </div>
 
             <div id="flexboxes">
