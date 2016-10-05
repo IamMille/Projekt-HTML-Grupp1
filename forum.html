@@ -173,9 +173,14 @@
             border: 1px dashed grey;
         }
         
+        #forum > .flexrow > div:nth-child(n+3) {
+            text-align: center;
+        }
+
         #forum > .flexrow:not(:first-child) > div:not(:nth-child(n+3)) {
             /* ej första raden (rubriker), inte 3-4e columnen (trådar och poster) */
             cursor: pointer;
+            /* så att forum-posterna ser ut som länkar */
         }
         
         #forum > div > div:not(:last-child) {
@@ -207,6 +212,16 @@
         
         .flexrow .cat {
             flex: 1.5;
+        }
+
+        .hiddenlink {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .hiddenlink:hover {
+            text-decoration: none;
+            color: inherit;
         }
     </style>
 </head>
@@ -283,7 +298,7 @@
                     <div class="cat">Andra katter</div>
                     <div class="post">Söta katter, lata katter, men finns det andra katter?</div>
                     <div class="numth">21k</div>
-                    <div class="numposts">259k</div>
+                    <div class="numposts"><a href="index2.html" class="hiddenlink">260k</a></div>
                 </div>
             </div>
 
