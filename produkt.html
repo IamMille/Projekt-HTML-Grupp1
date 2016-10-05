@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
     <title>Cute Cat Ltd.</title>
     <meta name="description" content="">
     <meta name="author" content="Projekt-HTML-Grupp1">
+
+    <link rel="icon" sizes="32x32" href="images/favicon/black-cat-32.png">
+    <link rel="icon" sizes="64x64" href="images/favicon/black-cat-64.png">
+    <link rel="icon" sizes="114x114" href="images/favicon/black-cat-114.png">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="global.css">
@@ -16,13 +21,16 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         img {
             float: right;
             margin: 0px 20px 20px 20px
         }
+
         p {
             font-size: 1.2em;
         }
+
         .item {
             display: inline-block;
             background-color: rgba(240, 252, 200, 0.59);
@@ -32,39 +40,45 @@
             text-align: left;
             padding: 20px;
         }
+
         button {
-                background-color: rgba(63, 191, 61, 0.59);
-                font-family: Arial;
-                font-size: 2em;
-                border: 0px solid white;
-                padding; 5px;
-                width: 300px;
+            background-color: rgba(63, 191, 61, 0.59);
+            font-family: Arial;
+            font-size: 2em;
+            border: 0px solid white;
+            padding;
+            5px;
+            width: 300px;
         }
+
         form {
             width: 40%;
         }
+
         .form {
-            display: flex; flex-direction: row;
+            display: flex;
+            flex-direction: row;
         }
     </style>
 </head>
+
 <body>
     <header>
         Cute Cat Ltd.
     </header>
-        <nav>
-            <ul>
-                <li><a href="." title="Start">Start</a></li>
-                <li class="nav-selected"><a href="shop.html" title="Shop">Shop</a></li>
-                <li><a href="omoss.html" title="Om oss">Om oss</a></li>
-                <li><a href="blogg.html" title="Blogg">Blogg</a></li>
-                <li><a href="forum.html" title="Forum">Forum</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="." title="Start">Start</a></li>
+            <li class="nav-selected"><a href="shop.html" title="Shop">Shop</a></li>
+            <li><a href="omoss.html" title="Om oss">Om oss</a></li>
+            <li><a href="blogg.html" title="Blogg">Blogg</a></li>
+            <li><a href="forum.html" title="Forum">Forum</a></li>
+        </ul>
+    </nav>
     <main>
         <div class="item">
             <h3><strong>Crazy Cat Lady Paket</strong></h3>
-            <img src="images/kittens.jpg"/>
+            <img src="images/kittens.jpg" />
             <p>Crazy Cat Lady är vår första paketlösning som erbjuder våra mest hängivna kunder.</p>
             <br>
             <p>Med vår unika paket lösning så erbjuder vi ett urval av kattungar som vi skickar direkt till din dörr. Vad vi gör är att vi tar de tre första lösgående kattungarna vi kan hitta, paketerar ner dem och skickar dem till dig. På det sättet får du en överraskning i vilka katter du får.</p>
@@ -73,25 +87,30 @@
             <br>
             <p>För detta paketet har vi annorlunda <a href="#">köpesvillkor</a> då vi har specifika bestämmelser för detta paket.</p>
             <form>
-                    <h4>Hur många av kattungarna önskar du ska vara honor?</h4>
+                <h4>Hur många av kattungarna önskar du ska vara honor?</h4>
                 <div class="form">
-                    <input type="radio" name="radiob" id="rad1"/>
-                    <label for="rad1">1</label><br>
-                    <input type="radio" name="radiob" id="rad2"/>
-                    <label for="rad2">2</label><br>
-                    <input type="radio" name="radiob" id="rad3"/>
-                    <label for="rad3">3</label><br>
+                    <input type="radio" name="radiob" id="rad1" />
+                    <label for="rad1">1</label>
+                    <br>
+                    <input type="radio" name="radiob" id="rad2" />
+                    <label for="rad2">2</label>
+                    <br>
+                    <input type="radio" name="radiob" id="rad3" />
+                    <label for="rad3">3</label>
+                    <br>
                 </div>
-                    <h4>Meddelande till personal ang produkten</h4>
-                    <textarea rows="5" cols="50"></textarea><br>
-                    <input  type="checkbox" name="checkme" id="check"/>
-                    <label for="check">Accepterar du köpesvillkor för detta paket?</label>
-                </form>
+                <h4>Meddelande till personal ang produkten</h4>
+                <textarea rows="5" cols="50"></textarea>
+                <br>
+                <input type="checkbox" name="checkme" id="check" />
+                <label for="check">Accepterar du köpesvillkor för detta paket?</label>
+            </form>
             <button class="button">Köp</button>
         </div>
     </main>
     <footer>
-    Cute Cat Ltd ® 2016
+        Cute Cat Ltd ® 2016
     </footer>
 </body>
+
 </html>
