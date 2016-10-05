@@ -24,6 +24,7 @@
             font-family: cursive;
             font-size: 2em;
         }
+
         main {
             display: flex;
             justify-content: center;
@@ -79,18 +80,19 @@
         }
 
         #forum {
-           /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
+            /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
             background: rgba(240, 252, 200, 0.59);
         }
 
         #forum > div {
             border: 1px dashed grey;
         }
-
         /* ej första raden (kolumn rubriker), inte 3-4e columnen */
+
         #forum > .flexrow:not(:first-child) > div:not(:nth-child(n+3)) {
-           cursor: pointer;
+            cursor: pointer;
         }
+
         #forum > div > div:not(:last-child) {
             border-right: 1px dashed grey;
         }
@@ -130,11 +132,26 @@
 
     <nav>
         <ul>
-            <li><a href="." title="Start">Start</a></li>
-            <li><a href="shop.html" title="Shop">Shop</a></li>
-            <li><a href="omoss.html" title="Om oss">Om oss</a></li>
-            <li><a href="blogg.html" title="Blogg">Blogg</a></li>
-            <li class="nav-selected"><a href="forum.html" title="Forum">Forum</a></li>
+            <li>
+                <a href="." title="Start">
+                    <span class="glyphicon glyphicon-home"></span>Home</a>
+            </li>
+            <li>
+                <a href="shop.html" title="Shop">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>Shop</a>
+            </li>
+            <li>
+                <a href="omoss.html" title="Om oss">
+                    <span class="glyphicon glyphicon-briefcase"></span>Om oss</a>
+            </li>
+            <li>
+                <a href="blogg.html" title="Blogg">
+                    <span class="glyphicon glyphicon-blackboard"></span>Blogg</a>
+            </li>
+            <li class="nav-selected">
+                <a href="forum.html" title="Forum">
+                    <span class="glyphicon glyphicon-comment"></span>Forum</a>
+            </li>
         </ul>
     </nav>
 
@@ -190,12 +207,6 @@
         </section>
 
     </main>
-
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
 
 </body>
 

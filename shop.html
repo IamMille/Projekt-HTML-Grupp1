@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
     <title>Cute Cat Ltd.</title>
     <meta name="description" content="">
     <meta name="author" content="Projekt-HTML-Grupp1">
@@ -13,18 +14,22 @@
         body {
             background: url("images/cover.jpg");
             background-repeat: no-repeat;
-            background-size: cover;   
+            background-size: cover;
         }
+
         main {
             display: flex;
             flex-direction: column;
         }
+
         main > nav {
             flex: 1 1 auto;
         }
+
         .produkter {
             margin: 40px;
         }
+
         .shoparticle {
             display: inline-block;
             background-color: rgba(240, 252, 200, 0.59);
@@ -33,11 +38,13 @@
             margin: 20px;
             text-align: center;
         }
+
         a:link {
             color: black;
             background-color: transparent;
             text-decoration: none;
         }
+
         p {
             text-align: center;
             font-size: 1.2em;
@@ -45,39 +52,60 @@
             font-family: Georgia, serif;
             text-align: center;
         }
+
         img {
             display: block;
             margin: auto;
         }
+
         button {
             background-color: rgba(63, 191, 61, 0.59);
             font-family: Arial;
             font-size: 2em;
             border: 0px solid white;
-            padding; 5px;
+            padding;
+            5px;
             width: 300px;
         }
+
         main > div {
             float: left;
         }
+
         .varukorg {
             background-color: limegreen;
         }
     </style>
 </head>
+
 <body>
     <header>
         Cute Cat Ltd.
     </header>
-        <nav>
-            <ul>
-                <li><a href="." title="Start">Start</a></li>
-                <li class="nav-selected"><a href="shop.html" title="Shop">Shop</a></li>
-                <li><a href="omoss.html" title="Om oss">Om oss</a></li>
-                <li><a href="blogg.html" title="Blogg">Blogg</a></li>
-                <li><a href="forum.html" title="Forum">Forum</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li>
+                <a href="." title="Start">
+                    <span class="glyphicon glyphicon-home"></span>Home</a>
+            </li>
+            <li class="nav-selected">
+                <a href="shop.html" title="Shop">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>Shop</a>
+            </li>
+            <li>
+                <a href="omoss.html" title="Om oss">
+                    <span class="glyphicon glyphicon-briefcase"></span>Om oss</a>
+            </li>
+            <li>
+                <a href="blogg.html" title="Blogg">
+                    <span class="glyphicon glyphicon-blackboard"></span>Blogg</a>
+            </li>
+            <li>
+                <a href="forum.html" title="Forum">
+                    <span class="glyphicon glyphicon-comment"></span>Forum</a>
+            </li>
+        </ul>
+    </nav>
     <main>
         <nav>
             <div>
@@ -89,15 +117,41 @@
                     <li><a href="#" title="Övrigt">Övrigt</a></li>
                     <li class="varukorg"><a href="#" title="Varukorg">Varukorg</a></li>
                 </ul>
-            </div>    
+            </div>
         </nav>
         <div class="produkter">
-            <div class="shoparticle"><img src="images/norwegian_forestcat.jpg"/><p>Norsk Skogskatt, Hane</p><p>7000kr</p><button class="button">Köp</button> </div>
-            <div class="shoparticle"><img src="images/norwegian_forestcat2.jpg"/><p>Norsk Skogskatt, Hona</p><p>12000kr</p><button class="button">Köp</button></div>
-            <div class="shoparticle"><img src="images/bengal_kitten.jpg"/><p>Bengal, Hona</p><p>21000kr</p><button class="button">Köp</button></div>
-            <div class="shoparticle"><img src="images/m_coon_kitten.jpg"/><p>Maine Coon, Hane</p><p>16000kr</p><button class="button">Köp</button></div>
-            <div class="shoparticle"><img src="images/persian_kitten.jpg"/><p>Persian, Hane</p><p>17000kr</p><button class="button">Köp</button></div>
-            <div class="shoparticle"><img src="images/kittens2.jpg"/><p>Crazy Cat Lady Paket</p><p>5000kr</p><a href="produkt.html"><button class="button">Mer Info</button></a></div>
+            <div class="shoparticle"><img src="images/norwegian_forestcat.jpg" />
+                <p>Norsk Skogskatt, Hane</p>
+                <p>7000kr</p>
+                <button class="button">Köp</button>
+            </div>
+            <div class="shoparticle"><img src="images/norwegian_forestcat2.jpg" />
+                <p>Norsk Skogskatt, Hona</p>
+                <p>12000kr</p>
+                <button class="button">Köp</button>
+            </div>
+            <div class="shoparticle"><img src="images/bengal_kitten.jpg" />
+                <p>Bengal, Hona</p>
+                <p>21000kr</p>
+                <button class="button">Köp</button>
+            </div>
+            <div class="shoparticle"><img src="images/m_coon_kitten.jpg" />
+                <p>Maine Coon, Hane</p>
+                <p>16000kr</p>
+                <button class="button">Köp</button>
+            </div>
+            <div class="shoparticle"><img src="images/persian_kitten.jpg" />
+                <p>Persian, Hane</p>
+                <p>17000kr</p>
+                <button class="button">Köp</button>
+            </div>
+            <div class="shoparticle"><img src="images/kittens2.jpg" />
+                <p>Crazy Cat Lady Paket</p>
+                <p>5000kr</p>
+                <a href="produkt.html">
+                    <button class="button">Mer Info</button>
+                </a>
+            </div>
             <div></div>
             <div></div>
             <div></div>
@@ -105,7 +159,8 @@
         </div>
     </main>
     <footer>
-    Cute Cat Ltd ® 2016
+        Cute Cat Ltd ® 2016
     </footer>
 </body>
+
 </html>
