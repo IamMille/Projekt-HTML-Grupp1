@@ -9,14 +9,8 @@
     <meta name="author" content="Projekt-HTML-Grupp1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="global.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <style>
         h2 {
@@ -98,17 +92,24 @@
         
         @keyframes one {
             0% {
+                /* 100% = ute till höger */
                 transform: translateX(100%);
             }
+            /* 2 sek */
             6.67% {
+                /* 0 = i mitten på containern */
                 transform: translateX(0);
             }
+            /* 6 sek */
             26.67% {
                 transform: translateX(0);
             }
+            /* 2 sek */
             33.33% {
+                /* -100% = ute till vänster */
                 transform: translateX(-100%);
             }
+            /* 20 sek */
             100% {
                 transform: translateX(-100%);
             }
@@ -118,18 +119,23 @@
             0% {
                 transform: translateX(100%);
             }
+            /* 10 sek */
             33.33% {
                 transform: translateX(100%);
             }
+            /* 2 sek */
             40% {
                 transform: translateX(0);
             }
+            /* 6 sek */
             60% {
                 transform: translateX(0);
             }
+            /* 2 sek */
             66.67% {
                 transform: translateX(-100%);
             }
+            /* 10 sek */
             100% {
                 transform: translateX(-100%);
             }
@@ -139,15 +145,19 @@
             0% {
                 transform: translateX(100%);
             }
+            /* 20 sek */
             66.67% {
                 transform: translateX(100%);
             }
+            /* 2 sek */
             73.33% {
                 transform: translateX(0);
             }
+            /* 6 sek */
             93.33% {
                 transform: translateX(0);
             }
+            /* 2 sek */
             100% {
                 transform: translateX(-100%);
             }
@@ -162,9 +172,9 @@
         #forum > div {
             border: 1px dashed grey;
         }
-        /* ej första raden (rubriker), inte 3-4e columnen (trådar och poster) */
         
         #forum > .flexrow:not(:first-child) > div:not(:nth-child(n+3)) {
+            /* ej första raden (rubriker), inte 3-4e columnen (trådar och poster) */
             cursor: pointer;
         }
         
@@ -233,7 +243,6 @@
     <main>
         <section>
 
-
             <div id="btnbar">
                 <h2>Forum</h2>
                 <button>Aktuella ämnen</button>
@@ -243,13 +252,13 @@
             </div>
 
             <div id="ticker">
-                <p><a href="#">Katter är söta (1d sedan)</p>
+                <p><a href="#">Katter är söta (1d sedan)</a></p>
                 <p><a href="#">Tomater är frukter (2d sedan)</a></p>
                 <p><a href="#">Och detta är en ticker som använder transitions (3d sedan)</a></p>
             </div>
 
             <div id="forum">
-                <div class="flexrow" data-toggle="tooltip" data-placement="right" title="text-transform: uppercase;">
+                <div class="flexrow">
                     <div class="cat">KATEGORI</div>
                     <div class="post">INLÄGG</div>
                     <div class="numth">TRÅDAR</div>
@@ -279,7 +288,6 @@
             </div>
 
         </section>
-
     </main>
 
     <footer>Cute Cat Ltd ® 2016</footer>
