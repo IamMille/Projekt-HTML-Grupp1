@@ -23,15 +23,23 @@
         }
         
         #cover {
-            width: 100%;
             background-image: url("images/cover-smaller.jpg");
             background-size: contain;
             background-repeat: no-repeat;
+            width: 100%;
             height: 0;
             /* img ratio */
             padding-top: 34.375%;
         }
         
+        #covertext {
+            border: 1px solid red;
+            padding-top: 34.375%;
+            font-weight: 800;
+            font-size: 1.5em;
+            color: white;
+        }
+
         #pres {
             padding: 15px;
             padding-bottom: 0px;
@@ -57,7 +65,7 @@
             padding-left: 12px;
             padding-right: 12px;
         }
-    
+
         .boxes h2 {
             border-bottom: 2px solid #aaaaaa;
             padding: 5px;
@@ -87,12 +95,14 @@
         
         .boxes em {
             display: block;
-            padding-top: 10px; 
+            padding-top: 10px;
         }
         
         small {
             font-size: 0.7em;
         }
+
+        @media (max-width: 567px) {}
     </style>
 </head>
 
@@ -102,11 +112,26 @@
 
     <nav>
         <ul>
-            <li class="nav-selected"><a href="." title="Start">Start</a></li>
-            <li><a href="shop.html" title="Shop">Shop</a></li>
-            <li><a href="omoss.html" title="Om oss">Om oss</a></li>
-            <li><a href="blogg.html" title="Blogg">Blogg</a></li>
-            <li><a href="forum.html" title="Forum">Forum</a></li>
+            <li class="nav-selected">
+                <a href="." title="Start">
+                    <span class="glyphicon glyphicon-home"></span>Home</a>
+            </li>
+            <li>
+                <a href="shop.html" title="Shop">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>Shop</a>
+            </li>
+            <li>
+                <a href="omoss.html" title="Om oss">
+                    <span class="glyphicon glyphicon-briefcase"></span>Om oss</a>
+            </li>
+            <li>
+                <a href="blogg.html" title="Blogg">
+                    <span class="glyphicon glyphicon-blackboard"></span>Blogg</a>
+            </li>
+            <li>
+                <a href="forum.html" title="Forum">
+                    <span class="glyphicon glyphicon-comment"></span>Forum</a>
+            </li>
         </ul>
     </nav>
 

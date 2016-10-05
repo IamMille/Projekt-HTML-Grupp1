@@ -156,7 +156,6 @@
 
         .nav-trigger:checked ~ .site-wrap {
             top: 520px;
-            /* gemomskinlig skugga */
             box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.6);
         }
 
@@ -167,8 +166,8 @@
 
         @media screen and (max-width: 480px) {
             label[for="nav-trigger"] {
-                width: 4em;
-                height: 4em;
+                width: 3em;
+                height: 3em;
             }
             h2 {
                 font-size: 1.5em;
@@ -192,11 +191,26 @@
 
     <nav>
         <ul>
-            <li class="nav-item nav-selected"><a href="index.html" title="Start">Start</a></li>
-            <li class="nav-item"><a href="shop.html" title="Shop">Shop</a></li>
-            <li class="nav-item"><a href="omoss.html" title="Om oss">Om oss</a></li>
-            <li class="nav-item"><a href="blogg.html" title="Blogg">Blogg</a></li>
-            <li class="nav-item"><a href="forum.html" title="Forum">Forum</a></li>
+            <li class="nav-selected">
+                <a href="." title="Start">
+                    <span class="glyphicon glyphicon-home"></span>Home</a>
+            </li>
+            <li>
+                <a href="shop.html" title="Shop">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>Shop</a>
+            </li>
+            <li>
+                <a href="omoss.html" title="Om oss">
+                    <span class="glyphicon glyphicon-briefcase"></span>Om oss</a>
+            </li>
+            <li>
+                <a href="blogg.html" title="Blogg">
+                    <span class="glyphicon glyphicon-blackboard"></span>Blogg</a>
+            </li>
+            <li>
+                <a href="forum.html" title="Forum">
+                    <span class="glyphicon glyphicon-comment"></span>Forum</a>
+            </li>
         </ul>
     </nav>
 

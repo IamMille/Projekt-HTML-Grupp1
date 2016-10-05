@@ -21,21 +21,25 @@ nav {
     background-color: beige;
     border-bottom: 2px solid white;
 }
+
 .nav-selected {
     background-color: white;
 }
+
 nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
 }
+
 nav li {
     padding-top: 15px;
     padding-bottom: 18px;
     text-align: left;
     cursor: pointer;
 }
+
 nav li a {
     text-decoration: none;
     color: black;
@@ -44,13 +48,22 @@ nav li a {
     margin-right: 15px;
     white-space: nowrap;
 }
+
+nav li a .glyphicon {
+    margin-right: 7px;
+    font-size: 0.86em;
+    color: darkgreen;
+}
+
 nav li:hover {
     background-color: white;
 }
+
 nav li a:hover {
     text-decoration: none;
     color: #006500
 }
+
 footer {
     text-align: center;
     font-size: 14px;
