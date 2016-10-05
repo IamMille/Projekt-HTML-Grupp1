@@ -24,7 +24,7 @@
             font-family: cursive;
             font-size: 2em;
         }
-
+        
         main {
             display: flex;
             justify-content: center;
@@ -38,65 +38,140 @@
         }
         
         #btnbar {
-            text-align: center;
             padding: 20px 0px 10px;
+        }
+        
+        #btnbar h2 {
+            display: inline-block;
+            float: left;
+        }
+        
+        #btnbar button {
+            margin-top: 27px;
+            float: right;
+            margin-left: 5px;
         }
         
         main section {
             width: 700px;
         }
-
-        #trending {
-            border: 1px solid #fff;
-            margin-bottom: 10px;
-            display: flex;
-            background: rgba(247, 247, 247, 0.59);
-        }
         
-        #trending div {
-            display: inline-block;
-            padding: 5px;
-        }
-
-        #trending div:first-child {
-            font-weight: bolder;
-            display: inline-block;
-            text-align: center;
-            width: 120px;
-            padding: 5px;
-            border-left: 5px solid white;
-            border-right: 5px solid white;
-        }
-
-        #trending div:nth-child(2) {
-            text-align: center;
+        #ticker {
+            position: relative;
             overflow: hidden;
-            color: black;
+            background: rgba(247, 247, 247, 0.59);
+            width: 700px;
+            height: 50px;
+            border: 1px solid grey;
+            margin-bottom: 10px;
         }
         
-        #trending span:not(:last-child):after {
-            content: " | ";
-            color: white;
+        #ticker p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            color: darkgreen;
+            text-shadow: 1px 1px 0px #000000;
+            transform: translateX(100%);
         }
-
+        
+        #ticker p a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        #ticker p:nth-child(1) {
+            animation: one 30s ease infinite;
+        }
+        
+        #ticker p:nth-child(2) {
+            animation: two 30s ease infinite;
+        }
+        
+        #ticker p:nth-child(3) {
+            animation: three 30s ease infinite;
+        }
+        /* Schema: https://docs.google.com/spreadsheets/d/1B4mv6u4oI_2ih8b9KcZi-96eWw_24gnyQtVKMb1l2Jo/edit */
+        
+        @keyframes one {
+            0% {
+                transform: translateX(100%);
+            }
+            6.67% {
+                transform: translateX(0);
+            }
+            26.67% {
+                transform: translateX(0);
+            }
+            33.33% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes two {
+            0% {
+                transform: translateX(100%);
+            }
+            33.33% {
+                transform: translateX(100%);
+            }
+            40% {
+                transform: translateX(0);
+            }
+            60% {
+                transform: translateX(0);
+            }
+            66.67% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes three {
+            0% {
+                transform: translateX(100%);
+            }
+            66.67% {
+                transform: translateX(100%);
+            }
+            73.33% {
+                transform: translateX(0);
+            }
+            93.33% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
         #forum {
             /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
             background: rgba(240, 252, 200, 0.59);
+            margin-bottom: 10px;
         }
-
+        
         #forum > div {
             border: 1px dashed grey;
         }
-        /* ej första raden (kolumn rubriker), inte 3-4e columnen */
-
+        /* ej första raden (rubriker), inte 3-4e columnen (trådar och poster) */
+        
         #forum > .flexrow:not(:first-child) > div:not(:nth-child(n+3)) {
             cursor: pointer;
         }
-
+        
         #forum > div > div:not(:last-child) {
             border-right: 1px dashed grey;
         }
-
+        
         #forum .flexrow div {
             padding-left: 10px;
         }
@@ -115,11 +190,11 @@
         .flexrow div {
             flex: 1;
         }
-
+        
         .flexrow .post {
             flex: 3;
         }
-
+        
         .flexrow .cat {
             flex: 1.5;
         }
@@ -157,21 +232,20 @@
 
     <main>
         <section>
-            <h2>Forum</h2>
+
 
             <div id="btnbar">
+                <h2>Forum</h2>
                 <button>Aktuella ämnen</button>
                 <button>Nya ämnen</button>
                 <button>Nya inlägg</button>
                 <button>Dina favoriter</button>
             </div>
 
-            <div id="trending" data-toggle="tooltip" data-placement="right" title="Seperator using :not(:last-child):after">
-                <div>SENASTE</div>
-                <div>
-                    <span>Tomater är frukter (2d sedan)</span>
-                    <span>Katter är söta (365d sedan)</span>
-                </div>
+            <div id="ticker">
+                <p><a href="#">Katter är söta (1d sedan)</p>
+                <p><a href="#">Tomater är frukter (2d sedan)</a></p>
+                <p><a href="#">Och detta är en ticker som använder transitions (3d sedan)</a></p>
             </div>
 
             <div id="forum">
@@ -208,6 +282,7 @@
 
     </main>
 
+    <footer>Cute Cat Ltd ® 2016</footer>
 </body>
 
 </html>
